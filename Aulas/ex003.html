@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first Program</title>
+    <style>
+      body {
+        background-color: rgb(13, 13, 121);
+        color: white;
+        font: normal 20pt Arial; /*  cor da fonte*/
+      }
+      h1 {
+        color: rgb(43, 255, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Olá Mundo!</h1>
+    <!--Mensagem aleatória-->
+    <p>Ja me livrei da maldição!</p>
+    <script>
+      // var n1 = window.prompt("digite um numero");
+      // var n2 = window.prompt("digite o outro numero "); // window.prompt serve para string
+      // number . parseInt(n) para numeros inteiros
+      // number.parseFloat(n) para numeros reais (com virgula)
+      //var n1 = number.parseFloat(window.prompt("digite um numero")); assim funciona a conversão
+      //var n2 = number.parseFloat(window.prompt("digite o outro numero "));
+      //var soma = n1 + n2;
+      var n1 = Number(window.prompt("digite um numero")); //podemos converter para string trocando Number por String
+      var n2 = Number(window.prompt("digite o outro numero ")); //assim funciona tbm e é a convensão mais nova
+      var soma = n1 + n2;
+      //window.alert("A soma entre " + n1 + "+" + n2 + " é: " + soma); opção 1
+      window.alert(`A soma entre ${n1} e ${n2} é: ${soma}`); // lembre que é crase `
+      //s.legnth para pegar quantos caracteres a string possui
+      //s.toUpperCase() deixa maiuculo e s.toLowerCase minusculas
+    </script>
+  </body>
+</html>

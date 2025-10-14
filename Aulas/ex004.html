@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font: normal 20pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var nome = window.prompt("Qual é o seu nome?");
+      document.writeln(`Olá ${nome} seu nome tem ${nome.length} letras `);
+      document.writeln(`Seu nome em maiusculas é: ${nome.toUpperCase()}`);
+      document.writeln(`Seu nome em minusculas é: ${nome.toLocaleLowerCase()}`);
+      //COMANDOS PARA O NODE
+      //n1.toLocaleString('pt-BR', {style: 'currency', currency 'BRL'}) formatação dinhero BRL
+      //n1.toLocaleString('pt-BR', {style: 'currency', currency 'EUR'}) formatação dinhero EUR
+      //n1.toLocaleString('pt-BR', {style: 'currency', currency 'USD'}) formatação dinhero dólar
+      //n1.toFixed(2) 2 casas após a virgula
+      //n1.toFixed(2).Replace('.', ',')  2 casas após a virgula e troca o ponto por vírgula
+    </script>
+  </body>
+</html>
