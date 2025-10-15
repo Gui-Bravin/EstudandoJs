@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiros passos com DOM</title>
+    <style>
+      body {
+        background: blue;
+        color: white;
+        font: normal 18px Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iniciando Estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div id="msg">Clique em mim</div>
+    <div name="d2">teste</div>
+    <script>
+      //selecionando por marca
+      var corpo = window.document.body; //a var corpo pega o body todo
+      var p1 = window.document.getElementsByTagName("p")[1]; // a var p1 recebe o 1 paragrafo que é selecionado por sua tag "p" pelo numero entre [] no final
+      document.write(p1.innerHTML); //o inner text escreve as formatações feitas pelo html no caso Strong em DOM
+      //document.writeln(p1.innerText); o innerText pega oq esta na variavel p1 e o exibe na tela com o document.writeln se nao colocar o innerText mostra que é um Elemnto de paragrafo do HTML
+      //window.document.writeln("Está escrito assim " + p1.innerText);
+      //corpo.style.background = "black"; colocar esse comando com background muda o fundo do site
+      //p1.style.color = "blue"; a p1 pega o primeiro paragrafo e colocando style e color muda a cor daquele paragrafo
+
+      //selecionando por Id
+      var d = window.document.getElementById("msg");
+      d.style.background = "green";
+      d.innerText = "Estou Aguardando....";
+      //window.document.getElementById("msg").innerText = "Olá"; forma mais extensa
+
+      //daria pra fazer com name tbm
+      var d2 = window.document.getElementsByName("d2")[0];
+      d2.style.background = "black";
+      d2.innerText = "tralala";
+
+      //MELHOR FORMA É por query selector
+      var f = window.document.querySelector("div#msg"); // se for id é # se for class é .
+    </script>
+  </body>
+</html>
