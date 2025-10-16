@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio ex008</title>
+  </head>
+  <body>
+    <h1>Verificação de nacionalidade</h1>
+    Digite o País em que voce nasceu:
+    <input type="text" name="nac" class="nac" />
+    <input type="button" value="Enviar" onclick="nacionalidade()" />
+    <div class="res"></div>
+    <script>
+      var nac = window.document.querySelector(".nac");
+      var res = window.document.querySelector(".res");
+
+      function nacionalidade() {
+        var pais = nac.value;
+
+        if (pais == "Brasil") {
+          res.innerHTML = "Ai sim vai Brasil!";
+        } else {
+          res.innerHTML = `Voce é do pais:${pais}, Pra Gringo é mais caroo!`;
+        }
+      }
+    </script>
+
+    <!--console.log("o console funcionou corretamente");
+var vel = 78.2;
+console.log(`A sua velocidade é de ${vel}`);
+if (vel > 60) {
+  console.log("A sua velocidade esta acima da maxima. Multado!");
+} else {
+  console.log("Uso sempre o cinto de segurança!");
+}
+var pais = "EUA";
+console.log(`vivendo no Pais ${pais}`);
+if (pais == "brasil") {
+  console.log("Brasileiro!");
+} else {
+  console.log("Gringo!");
+} -->
+  </body>
+</html>
