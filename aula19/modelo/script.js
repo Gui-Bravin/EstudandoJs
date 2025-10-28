@@ -39,6 +39,5 @@ function verificar() {
 
     // Mostrando resultado
     res.innerHTML = `A idade é de: ${idade} e o gênero é ${genero}.`;
-    // res.appendChild(img);
   }
 }
